@@ -8,9 +8,9 @@
         "video stream",
         "pyrogram"
     ],
-    "website": "https://t.me/BANDA1M",
-    "repository": "https://github.com/mostafaaziza/alazizy",
-    "success_url": "https://t.me/hama_refaat",
+    "website": "https://t.me/Rescordsource",
+    "repository": "https://github.com/Hector532/hector_music.git",
+    "success_url": "https://t.me/G0_LX",
     "env": {
         "API_ID": {
             "description": "قم بوضع الايبي ايدي هنا",
