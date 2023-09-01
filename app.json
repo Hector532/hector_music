@@ -1,99 +1,108 @@
 {
-    "name": "Yukki Music Bot",
-    "description": "Telegram Group Calls streaming bot with some useful features, written in Python with Pyrogram and Py-Tgcalls. Supporting platforms like Youtube, Spotify, Resso, AppleMusic, Soundcloud and M3u8 Links.",
-    "logo": "https://telegra.ph/file/9e296ece3755e4c1ae1cb.jpg",
-    "keywords": [
-    "python3",
-    "telegram",
-    "bot",
-    "Yukki",
-    "YukkiMusicBot",
-    "telegram-bot",
-    "pyrogram"
-    ],
+    "name": "Cyber Music Bot",
+    "logo": "https://telegra.ph/file/19d68d531fd2f6f96e368.jpg",
+    "description": "Cyber Music project allow you to stream music trought the telegram voice chat feature.",
+    "keywords": ["music", "voice chat", "telegram"],
+    "repository": "https://github.com/Hector532/hector_music",
     "stack": "container",
     "env": {
-      "API_ID": {
-        "description": "Get this value from https://my.telegram.org",
-        "value": "",
-        "required": true
-      },
-      "API_HASH": {
-        "description": "Get this value from https://my.telegram.org",
-        "value": "",
-        "required": true
-      },
-      "AUTO_LEAVING_ASSISTANT": {
-        "description": "If you want your assistant to leave all chats automatically after some time.",
-        "value": "True",
-        "required": false
-      },
-      "BOT_TOKEN": {
-        "description": "A Bot's token from Botfather",
-        "value": "",
-        "required": true
-      },
-      "MONGO_DB_URI": {
-        "description": "Get a mongodb url from https://cloud.mongodb.com . You can leave it blank if you want , bot will use Yukki's database for you.",
-        "value": "",
-        "required": true
-      },
-      "MUSIC_BOT_NAME": {
-        "description": "A name for your Music Bot. Please don't use ascii characters",
-        "value": "",
-        "required": true
-      },
-      "OWNER_ID": {
-        "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
-        "value": "",
-        "required": true
-      },
-      "STRING_SESSION": {
-        "description": "A Pyrogram String Session. One Assistant is Compulsory.",
-        "value": "",
-        "required": true
-      },
-      "HEROKU_API_KEY": {
-        "description": "Your Heroku account's API key",
-        "value": "",
-        "required": false
-      },
-      "HEROKU_APP_NAME": {
-        "description": "Your heroku app/bot's name",
-        "value": "",
-        "required": false
-      },
-      "LOG_GROUP_ID": {
-        "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Use only Group. Please don't use Channel ID.",
-        "value": "",
-        "required": true
-      },
-      "UPSTREAM_REPO": {
-        "description": "If you dont know this, Leave as it is",
-        "value": "https://github.com/TeamYukki/YukkiMusicBot",
-        "required": true
-      },
-      "UPSTREAM_BRANCH": {
-        "description": "Upstream Repo's Branch Name",
-        "value": "master",
-        "required": true
-      }
+        "SESSION_NAME": {
+            "description": "fill with the pyrogram session string",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "your bot token from @BotFather",
+            "required": true
+        },
+        "BOT_NAME": {
+            "description": "your music bot name.",
+            "required": true,
+            "value": ""
+        },
+        "OWNER_ID": {
+            "description": "fill with your telegram id as the owner of the bot",
+            "required": true,
+            "value": ""
+        },
+        "DATABASE_URL": {
+            "description": "fill with the mongodb url get from cloud.mongodb.com",
+            "required": true,
+            "value": ""
+        },
+        "LOG_CHANNEL": {
+            "description": "create a private channel and get the channel id, add your bot as admin to the channel too",
+            "required": true,
+            "value": ""
+        },
+        "BROADCAST_AS_COPY": {
+            "description": "choose one between False and True, if you don't know what this is, ask to @CyberSupportGroup on telegram",
+            "required": false,
+            "value": "False"
+        },
+        "BOT_USERNAME": {
+            "description": "fill with your bot username without @",
+            "required": true,
+            "value": "CyberMusicBot"
+        },
+        "ASSISTANT_NAME": {
+            "description": "fill with the assistant username without @",
+            "required": true,
+            "value": "SaitamaHelper"
+        },
+        "BG_IMAGE": {
+            "description": "fill with your costum background image link",
+            "required": false,
+            "value": "https://telegra.ph/file/bb35b7f4bca83551802d6.png"
+        },
+        "THUMB_IMG": {
+            "description": "fill with costum thumbnail image it's different with bg_image",
+            "required": false,
+            "value": "https://telegra.ph/file/6809135960af808e931b9.png"
+        },
+        "OWNER_NAME": {
+            "description": "fill with your username without @",
+            "required": false,
+            "value": "Badboyanim"
+        },
+        "API_ID": {
+            "description": "your App ID from my.telegram.org/apps",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "your Api hash from my.telegram.org/apps",
+            "required": true
+        },
+        "SUDO_USERS": {
+            "description": "fill with the user id who can access all function in your bot (separate with space).",
+            "required": true
+        },
+        "DURATION_LIMIT": {
+            "description": "max duration for video to download (in minutes).",
+            "required": true,
+            "value": "250"
+        },
+        "PMPERMIT": {
+            "description": "pm-permit for assistant.",
+            "required": false,
+            "value": "ENABLE"
+        },
+        "UPDATES_CHANNEL": {
+            "description": "if you have channel fill the channel username here without @",
+            "required": false,
+            "value": "CyberMusicProject"
+        },
+        "GROUP_SUPPORT": {
+            "description": "if you have group fill the group username here without @",
+            "required": false,
+            "value": "CyberSupportGroup"
+        }
     },
     "buildpacks": [
-          {
-              "url": "heroku/python"
-          },
-          {
-              "url": "heroku/nodejs"
-          },
-          {
-              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
-          }
-      ],
-      "formation": {
-          "worker": {
-              "quantity": 1,
-              "size": "free"
-          }
-      }
-  }
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+    },
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
