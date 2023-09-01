@@ -1,14 +1,14 @@
-{
+
     "name": "Video x Music Stream Bot",
     "description": "Telegram bot for Streaming Video & Music trought the Telegram Group Video Chat, powered by pytgcalls and pyrogram",
-    "logo": "https://telegra.ph/file/9e296ece3755e4c1ae1cb.jpg",
+    "logo": "https://telegra.ph/file/19d68d531fd2f6f96e368.jpg",
     "keywords": [
         "pytgcalls",
         "telegram bot",
         "video stream",
         "pyrogram"
     ],
-    "website": "https://t.me/Rescordsource",
+   "website": "https://t.me/Rescordsource",
     "repository": "https://github.com/Hector532/hector_music",
     "success_url": "https://t.me/G0_LX",
     "env": {
@@ -47,17 +47,17 @@
         "GROUP_SUPPORT": {
             "description": "ضع هنا يوزر جروبك بدون علامة @",
             "required": true,
-            "value": "F_B_I_8"
+            "value": "BANDA2M"
         },
         "UPDATES_CHANNEL": {
             "description": "ضع هنا يوزر قناتك بدون علامة @",
             "required": true,
-            "value": "Rescordsource"
+            "value": "BANDA1M"
         },
         "OWNER_NAME": {
             "description": "ضع هنا يوزر المطور بدون علامة @",
             "required": true,
-            "value": "G0_LX"
+            "value": "php_7"
         },
         "ALIVE_NAME": {
             "description": "اتركها كما هي",
