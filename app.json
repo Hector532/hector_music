@@ -9,7 +9,7 @@
         "pyrogram"
     ],
     "website": "https://t.me/Rescordsource",
-    "repository": "https://github.com/Hector532/hector_music.git",
+    "repository": "https://github.com/Hector532/hector_music",
     "success_url": "https://t.me/G0_LX",
     "env": {
         "API_ID": {
