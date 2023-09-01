@@ -47,17 +47,17 @@
         "GROUP_SUPPORT": {
             "description": "ضع هنا يوزر جروبك بدون علامة @",
             "required": true,
-            "value": "BANDA2M"
+            "value": "F_B_I_8"
         },
         "UPDATES_CHANNEL": {
             "description": "ضع هنا يوزر قناتك بدون علامة @",
             "required": true,
-            "value": "BANDA1M"
+            "value": "Rescordsource"
         },
         "OWNER_NAME": {
             "description": "ضع هنا يوزر المطور بدون علامة @",
             "required": true,
-            "value": "php_7"
+            "value": "G0_LX"
         },
         "ALIVE_NAME": {
             "description": "اتركها كما هي",
